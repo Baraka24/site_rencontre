@@ -1,0 +1,64 @@
+# Données des couples membres de Cœurs Unis
+couples:
+  - id: 1
+    names: "Alex et Sarah"
+    ages: "28 et 26 ans"
+    location: "Paris, Île-de-France"
+    interests: ["Voyages", "Gastronomie", "Randonnée", "Cinéma", "Cuisine internationale"]
+    description: "Jeune couple passionné par les voyages et la gastronomie. Nous cherchons à rencontrer d'autres couples pour partager des sorties, des repas et créer de nouvelles amitiés."
+    joined: "2024-01"
+
+  - id: 2
+    names: "Marc et Julie"
+    ages: "35 et 33 ans"
+    location: "Lyon, Rhône-Alpes"
+    interests: ["Activités outdoor", "Photographie", "Yoga", "Événements culturels"]
+    description: "Couple dynamique et ouvert, nous aimons les activités outdoor et les événements culturels. Passionnés par la photographie et le yoga, nous apprécions les conversations profondes."
+    joined: "2024-02"
+
+  - id: 3
+    names: "Sophie et Philippe"
+    ages: "42 et 44 ans"
+    location: "Marseille, Provence"
+    interests: ["Soirées entre amis", "Jeux de société", "Activités sportives"]
+    description: "Couple établi cherchant à enrichir notre cercle social. Nous adorons les soirées entre amis, les jeux de société et les activités sportives."
+    joined: "2024-03"
+
+  - id: 4
+    names: "Camille et David"
+    ages: "31 et 33 ans"
+    location: "Bordeaux, Nouvelle-Aquitaine"
+    interests: ["Art", "Créativité", "Culture", "Musique"]
+    description: "Créatifs et artistes, nous vivons une belle histoire ensemble depuis 8 ans. Nous cherchons à rencontrer d'autres couples créatifs et ouvertes d'esprit."
+    joined: "2024-04"
+
+  - id: 5
+    names: "Emilie et Thomas"
+    ages: "27 et 29 ans"
+    location: "Toulouse, Occitanie"
+    interests: ["Dîners", "Théâtre", "Balades", "Développement personnel"]
+    description: "Couple de professionnels passionnés par leur carrière et leur vie ensemble. Nous aimons les dîners, le théâtre et les balades enrichissantes."
+    joined: "2024-05"
+
+interests:
+  - "Voyages"
+  - "Gastronomie"
+  - "Randonnée"
+  - "Cinéma"
+  - "Yoga"
+  - "Photographie"
+  - "Jeux de société"
+  - "Art et culture"
+  - "Musique"
+  - "Sports"
+  - "Théâtre"
+  - "Développement personnel"
+
+locations:
+  - "Paris, Île-de-France"
+  - "Lyon, Rhône-Alpes"
+  - "Marseille, Provence"
+  - "Bordeaux, Nouvelle-Aquitaine"
+  - "Toulouse, Occitanie"
+  - "Lille, Nord-Pas-de-Calais"
+  - "Nantes, Pays de la Loire"

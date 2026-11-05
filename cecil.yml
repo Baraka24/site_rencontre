@@ -1,0 +1,46 @@
+# Site configuration: https://cecil.app/documentation/configuration/
+title: 'Cœurs Unis - Rencontres pour Couples'
+baseline: 'Trouvez votre couple idéal'
+baseurl: /
+description: 'Plateforme de rencontres dédiée aux couples cherchant à créer des liens significatifs.'
+language: fr
+languages:
+  - code: fr
+    name: Français
+    locale: fr
+author:
+  name: Communauté Cœurs Unis
+  url: '#'
+image: icon.png # default image of social networks cards, stored in `assets/`
+taxonomies:
+  tags: tag
+  categories: category
+
+## Additional menu entries
+menus:
+  main:
+    - id: profiles
+      name: Profils
+      url: 'page:profiles'
+      weight: 10
+    - id: contact
+      name: Contact
+      url: 'page:contact'
+      weight: 20
+    - id: about
+      name: À Propos
+      url: 'page:about'
+      weight: 30
+
+## Number of pages per page of a paginated list
+pages:
+  pagination:
+    max: 12
+
+## Dates format
+date:
+  format: 'j F Y'
+
+## Default robots directive
+metatags:
+  robots: index,follow

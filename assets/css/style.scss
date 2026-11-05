@@ -1,0 +1,256 @@
+// Site styles pour Cœurs Unis - Site de rencontres entre couples
+$gap: 1rem;
+$primary-color: #e74c3c;
+$secondary-color: #f39c12;
+$accent-color: #9b59b6;
+$light-color: #ecf0f1;
+
+// Variables CSS personnalisées
+:root {
+  --primary-color: #{$primary-color};
+  --secondary-color: #{$secondary-color};
+  --accent-color: #{$accent-color};
+}
+
+// Styles généraux
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+// En-tête personnalisé
+header {
+  background: linear-gradient(135deg, #{$primary-color}, #{$accent-color});
+  padding: 2rem $gap;
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+
+  h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  small {
+    font-size: 1rem;
+    opacity: 0.9;
+  }
+}
+
+// Navigation
+nav a {
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: #{$secondary-color};
+  }
+}
+
+// Cartes de profils
+.profile-card {
+  border: 2px solid #{$primary-color};
+  border-radius: 12px;
+  padding: $gap * 1.5;
+  margin-bottom: $gap * 2;
+  background: linear-gradient(to bottom right, white, #{$light-color});
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(231, 76, 60, 0.2);
+  }
+
+  h3 {
+    color: #{$primary-color};
+    margin-top: 0;
+  }
+
+  .location {
+    color: #{$secondary-color};
+    font-weight: bold;
+    margin-bottom: $gap;
+  }
+
+  .description {
+    line-height: 1.6;
+    color: #333;
+  }
+}
+
+// Boutons d'appel à l'action
+a[href*="contact"],
+a[href*="profiles"] {
+  background-color: #{$primary-color};
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  font-weight: bold;
+
+  &:hover {
+    background-color: #{$accent-color};
+    transform: scale(1.05);
+  }
+}
+
+// Valeurs (icônes et textes)
+.values {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: $gap * 2;
+  margin: $gap * 2 0;
+
+  .value-item {
+    text-align: center;
+    padding: $gap * 1.5;
+    background: #{$light-color};
+    border-radius: 10px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: linear-gradient(135deg, #{$primary-color}20, #{$accent-color}20);
+      transform: scale(1.05);
+    }
+
+    h4 {
+      color: #{$primary-color};
+      margin-top: $gap;
+    }
+
+    p {
+      margin-bottom: 0;
+      color: #555;
+      line-height: 1.6;
+    }
+  }
+}
+
+// Pied de page
+.footer-links {
+  background: linear-gradient(135deg, #{$primary-color}, #{$accent-color});
+  padding: $gap * 2;
+  margin-top: $gap * 3;
+  border-radius: 10px;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gap * 2;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+
+    li {
+      list-style: none;
+
+      a {
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        font-weight: 500;
+
+        &:hover {
+          color: #{$secondary-color};
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+// Table des matières
+.toc {
+  margin-bottom: $gap * 2;
+  background: #{$light-color};
+  padding: $gap;
+  border-radius: 8px;
+  border-left: 4px solid #{$primary-color};
+
+  summary {
+    font-weight: bold;
+    color: #{$primary-color};
+    cursor: pointer;
+  }
+}
+
+// Articles/blog
+article {
+  max-width: 800px;
+  margin: $gap * 2 auto;
+
+  time {
+    display: block;
+    margin-bottom: $gap;
+    color: #{$secondary-color};
+    font-weight: bold;
+  }
+
+  h1 {
+    color: #{$primary-color};
+    border-bottom: 3px solid #{$secondary-color};
+    padding-bottom: $gap;
+  }
+
+  h2 {
+    color: #{$accent-color};
+    margin-top: $gap * 2;
+  }
+
+  h3 {
+    color: #{$primary-color};
+  }
+
+  hr {
+    border-top: 2px solid #{$secondary-color};
+    margin: $gap * 2 0;
+  }
+}
+
+// Formulaire de contact
+form {
+  max-width: 600px;
+  margin: $gap * 2 auto;
+  background: #{$light-color};
+  padding: $gap * 2;
+  border-radius: 10px;
+  border-left: 4px solid #{$primary-color};
+
+  input,
+  textarea {
+    border-color: #{$primary-color};
+
+    &:focus {
+      border-color: #{$accent-color};
+      box-shadow: 0 0 0 3px rgba(155, 89, 182, 0.1);
+    }
+  }
+
+  button {
+    background-color: #{$primary-color};
+    color: white;
+    border: none;
+
+    &:hover {
+      background-color: #{$accent-color};
+    }
+  }
+}
+
+// Responsive
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .values {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-links ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+

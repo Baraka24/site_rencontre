@@ -1,0 +1,9 @@
+# Liens affichés dans le pied de page (voir `layouts/page.html.twig`)
+- name: Confidentialité
+  url: '#privacy'
+- name: Conditions d'utilisation
+  url: '#terms'
+- name: Signaler un abus
+  url: 'mailto:abuse@coeurs-unis.fr'
+- name: Nous suivre
+  url: '#social'
